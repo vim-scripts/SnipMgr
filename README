@@ -1,0 +1,20 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3664
+
+SnipMgr provide a simple "SnipMgr" menu tree, that allow you easy manage to your snipMate snippets.
+In addition, you can use :SnipAdd, :SnipRemove and :SnipUpdate commands or <leader>ssa, <leader>ssr, <leader>ssu key bindings.
+
+USAGE:
+
+*Adding snippet*
+You just select any strings in the visual-mode, Select-mode or
+visual-block mode and call :SnipAdd command by using SnipMgr menu, command
+line, or default key binding <leader>ssa.
+
+*Removing snippet*
+For removing already existing snippet use :SnipRemove command or <leader>ssr key binding.
+
+*Updating snippets list*
+If you just manualy add any snippets for current filetype, you can call the :SnipUpdate command and use these snippets instant now without restarting Vim. Default key binding: <leader>ssu.
+
+REPOSITORY:
+https://github.com/tlavi/SnipMgr
