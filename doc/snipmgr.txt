@@ -2,8 +2,8 @@
 
 SnipMgr                                                              *snipmgr*
 
-    VERSION:      1.1
-    DATE:         21-07-2011
+    VERSION:      1.2
+    DATE:         04-09-2011
     AUTHOR:       Tamir Lavi <tlavi@null.net>
     LICENSE:      Vim |license|
     REQUIREMENTS: Vim 7+, |nocp|, |snipMate|

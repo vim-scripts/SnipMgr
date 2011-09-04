@@ -2,12 +2,12 @@
 " File:         snipmgr.vim
 " Description:  A simple snippets manager for 'snipMate' Vim plugin
 " Maintainer:   Tamir Lavi
-" Last Changed: 21-07-2011
-" Version:      1.1
+" Last Changed: 04-09-2011
+" Version:      1.2
 " ============================================================================
 
 " Version
-let g:snipmgr_version = "1.1"
+let g:snipmgr_version = "1.2"
 
 " Check snipMate loading
 if exists('loaded_snips')
@@ -74,7 +74,7 @@ command! SnipUpdate :call SnipMgrUpdate()
 
 " * Add new snippet * {{{
 function! SnipMgrAdd() range
-  call input("Only one line... Write more later! :-)")
+  call range(a:firstline, a:lastline)
   let snip_d = &filetype
   if len(snip_d) == 0
     echo "No filetype"
@@ -133,7 +133,8 @@ function! SnipMgrRemove()
     return
   endif
   if delete(snip_path) == 0
-    echo "File '".snip_path."' was deleted"
+    echo "File '".snip_path."' has been deleted"
+	call SnipMgrUpdate()
   else
     echo "Error: couldn`t delete '".snip_path."'"
   endif
